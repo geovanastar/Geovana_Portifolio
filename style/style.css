@@ -17,8 +17,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family:
-    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
-    Arial, sans-serif;
+    DejaVu Sans Mono,
+    monospace;
 }
 
 body {
@@ -190,7 +190,7 @@ body {
   margin-bottom: 8px;
 }
 
-/* === Seção Sobre === */
+/* === Seção Sobre mim === */
 .page-title {
   text-align: center;
   color: #0047ab;
@@ -292,6 +292,67 @@ body {
   font-size: 0.9rem;
 }
 
+/* === Barra de Tarefas Estilo XP === */
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background: linear-gradient(to bottom, #3c89d5, #2763a5);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 15px;
+  color: white;
+  border-top: 2px solid #5cb8ff;
+}
+
+.logo-windows {
+  width: 22px; /* ← TAMANHO DO ÍCONE (ajuste se quiser) */
+  height: 16px; /* ← Proporção correta do logo */
+  margin-right: 6px; /* Espaço entre logo e texto */
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  background: transparent; /* SEM FUNDO BRANCO! */
+  box-shadow: none;
+}
+
+.start-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: linear-gradient(to bottom, #78c042, #5a9a2a);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 4px 14px 4px 8px;
+  border-radius: 0 18px 18px 0;
+  cursor: pointer;
+}
+.start-btn:hover {
+  filter: brightness(1.1);
+}
+.taskbar-links {
+  display: flex;
+  gap: 15px;
+}
+.taskbar-link {
+  color: white;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+.taskbar-link:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+.clock {
+  margin-left: auto;
+  padding: 4px 14px;
+  font-size: 0.95rem;
+}
+
 /* === Responsividade === */
 @media (max-width: 768px) {
   .intro-section,
@@ -302,4 +363,59 @@ body {
   .nav-bar {
     justify-content: center;
   }
+}
+
+/* === REDES SOCIAIS === */
+.social-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-title {
+  color: #0047ab;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-link {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
+}
+
+.social-link:hover {
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.linkedin {
+  background: #0077b5;
+}
+.github {
+  background: #333333;
+}
+.instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
 }
