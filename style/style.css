@@ -1,0 +1,305 @@
+/* === TEMA: Windows XP + Fruitti Aero === */
+:root {
+  --verde-fundo: #bfff80;
+  --azul-janela: #005ee4;
+  --azul-claro: #e6f2ff;
+  --azul-borda: #3a76d2;
+  --verde-destaque: #4cd964;
+  --laranja-botao: #ff9f33;
+  --rosa-fofo: #ffb3d1;
+  --amarelo-sol: #fff35c;
+  --sombra-suave: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --borda-arredondada: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+body {
+  background: url(../imagens/fundo.jpeg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+/* === Janela Estilo Windows XP === */
+.window {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  border: 3px solid var(--azul-borda);
+  border-radius: var(--borda-arredondada);
+  box-shadow: 0 8px 24px rgba(0, 94, 228, 0.25);
+  overflow: hidden;
+}
+
+/* Barra de Título */
+.title-bar {
+  background: linear-gradient(to right, #3a76d2, #005ee4);
+  color: white;
+  padding: 6px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.window-buttons button {
+  margin-left: 4px;
+  width: 24px;
+  height: 22px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: linear-gradient(#ffb347, #ff8c00);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.4);
+}
+.window-buttons button:nth-child(2) {
+  background: linear-gradient(#90ee90, #32cd32);
+}
+.window-buttons button:nth-child(1) {
+  background: linear-gradient(#87ceeb, #1e90ff);
+}
+.window-buttons button:hover {
+  filter: brightness(1.15);
+}
+
+.window-content {
+  padding: 25px;
+  background: linear-gradient(to bottom, #f0f8ff, #e6f2ff);
+  min-height: 500px;
+}
+
+/* === Navegação === */
+.nav-bar {
+  background: #d4e8ff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  border: 1px solid #94b8e8;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 6px 14px;
+  background: white;
+  border: 1px solid #94b8e8;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #0047ab;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.nav-link:hover,
+.nav-link.active {
+  background: #c6e2ff;
+  border-color: #005ee4;
+  transform: translateY(-1px);
+}
+.nav-label {
+  margin-left: 8px;
+  font-weight: bold;
+  color: #0047ab;
+}
+
+/* === Seção Apresentação === */
+.intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.avatar-container {
+  flex-shrink: 0;
+}
+.avatar-frame {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(45deg, #ffd700, #ff69b4, #00bfff, #32cd32);
+  box-shadow:
+    0 0 0 4px white,
+    0 6px 16px rgba(0, 0, 0, 0.18);
+}
+.avatar-frame.large {
+  width: 240px;
+  height: 240px;
+}
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 300px;
+}
+.intro-text h1 {
+  color: #0047ab;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.intro-text_ {
+  text-align: center;
+  align-items: center;
+  flex: 1;
+  min-width: 300px;
+}
+.intro-text_ h1 {
+  text-align: center;
+  align-items: center;
+  color: #0047ab;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+.intro-paragraph {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  color: #2f3e4f;
+  font-size: 1.05rem;
+}
+
+.skills-box {
+  margin-top: 18px;
+  padding: 15px;
+  background: #fff9c4;
+  border-radius: 8px;
+  border-left: 4px solid #655a38;
+}
+.skills-box h3 {
+  color: #b36b00;
+  margin-bottom: 8px;
+}
+
+/* === Seção Sobre === */
+.page-title {
+  text-align: center;
+  color: #0047ab;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+.about-section {
+  padding: 10px;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+.about-text {
+  flex: 1;
+  min-width: 320px;
+}
+.about-text p {
+  margin-bottom: 14px;
+  line-height: 1.75;
+  color: #2f3e4f;
+  font-size: 1.05rem;
+}
+.social-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fce4ec;
+  border-radius: 8px;
+  border-left: 4px solid #e91e63;
+}
+
+/* === Seção Projetos === */
+.section-title {
+  text-align: center;
+  color: #0047ab;
+  margin: 30px 0 20px;
+  font-size: 1.5rem;
+}
+.projects-grid {
+  margin-top: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+.project-card {
+  margin-top: 20px;
+  border: 2px solid #94b8e8;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 2px 4px 10px rgba(0, 94, 228, 0.12);
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 6px 16px rgba(0, 94, 228, 0.2);
+}
+.projects-grid_ {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+.project-card_ {
+  border: 2px solid #94b8e8;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 2px 4px 10px rgba(0, 94, 228, 0.12);
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
+}
+.project-card_:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 6px 16px rgba(0, 94, 228, 0.2);
+}
+.card-header {
+  background: linear-gradient(to right, #5dade2, #2980b9);
+  color: white;
+  padding: 10px 14px;
+  font-weight: bold;
+}
+.card-body {
+  padding: 15px;
+  background: white;
+}
+.card-body p {
+  margin-bottom: 10px;
+  color: #34495e;
+  line-height: 1.6;
+}
+.tech-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+/* === Responsividade === */
+@media (max-width: 768px) {
+  .intro-section,
+  .about-content {
+    justify-content: center;
+    text-align: center;
+  }
+  .nav-bar {
+    justify-content: center;
+  }
+}
