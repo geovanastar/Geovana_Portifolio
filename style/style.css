@@ -309,13 +309,13 @@ body {
 }
 
 .logo-windows {
-  width: 22px; /* ← TAMANHO DO ÍCONE (ajuste se quiser) */
-  height: 16px; /* ← Proporção correta do logo */
-  margin-right: 6px; /* Espaço entre logo e texto */
+  width: 22px;
+  height: 16px;
+  margin-right: 6px;
   display: inline-block;
   vertical-align: middle;
   border: none;
-  background: transparent; /* SEM FUNDO BRANCO! */
+  background: transparent;
   box-shadow: none;
 }
 
