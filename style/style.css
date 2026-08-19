@@ -1,4 +1,3 @@
-/* === TEMA: Windows XP + Fruitti Aero === */
 :root {
   --verde-fundo: #bfff80;
   --azul-janela: #005ee4;
@@ -132,7 +131,7 @@ body {
   height: 200px;
   border-radius: 50%;
   padding: 6px;
-  background: linear-gradient(45deg, #ffd700, #ff69b4, #00bfff, #32cd32);
+  background: linear-gradient(45deg, #e3ca39, #a6fa40, #4cf8d5, #76f43c);
   box-shadow:
     0 0 0 4px white,
     0 6px 16px rgba(0, 0, 0, 0.18);
@@ -180,8 +179,9 @@ body {
 
 .skills-box {
   margin-top: 18px;
+  color: white;
   padding: 15px;
-  background: #fff9c4;
+  background: #c6fc31;
   border-radius: 8px;
   border-left: 4px solid #655a38;
 }
@@ -404,18 +404,11 @@ body {
 }
 
 .linkedin {
-  background: #0077b5;
+  background: #2ef08c;
 }
 .github {
-  background: #333333;
+  background: #9bdf36;
 }
 .instagram {
-  background: linear-gradient(
-    45deg,
-    #f09433,
-    #e6683c,
-    #dc2743,
-    #cc2366,
-    #bc1888
-  );
+  background: rgb(241, 255, 47);
 }

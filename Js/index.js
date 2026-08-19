@@ -1,4 +1,4 @@
-// Relógio com Data + Hora em TEMPO REAL
+// Relógio com Data + Hora
 function updateClock() {
   const now = new Date();
   const dia = String(now.getDate()).padStart(2, "0");
